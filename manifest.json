@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Pocket News",
+  "version": "1.0",
+  "description": "Stay updated with the latest crypto news from top sources right in your new tab",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.coindesk.com/*",
+    "https://*.cointelegraph.com/*",
+    "https://*.cryptonews.com/*",
+    "https://*.newsbtc.com/*",
+    "https://*.coingecko.com/*",
+    "https://*.allorigins.win/*"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://*.allorigins.win https://*.coingecko.com"
+  }
+} 
